@@ -1,4 +1,3 @@
-// src/app/components/favorites/favorites.component.ts
 import { Component, OnInit } from '@angular/core';
 import { FavoritesService } from '../../services/favorites.service';
 import { CommonModule } from '@angular/common';
