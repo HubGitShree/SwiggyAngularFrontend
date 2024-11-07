@@ -1,0 +1,18 @@
+
+<div class="container mx-auto py-10 px-20">
+  <h2 class="text-2xl font-semibold text-gray-800 mb-6">Menu</h2>
+  <div class="flex items-center justify-between mb-6">
+    <input type="text" placeholder="Search for dishes" class="border border-gray-300 rounded-lg p-2 w-full max-w-md">
+    <button class="ml-4 text-sm text-gray-600 hover:text-gray-800">Bestseller</button>
+  </div>
+  <div *ngFor="let item of menuItems" class="flex justify-between items-center border-b border-gray-200 py-6 ">
+    <div class="flex-1">  <!-- grow 1 shrink  1 bsis 0-->
+      <h3 class="text-lg font-bold text-gray-900">{{item.name}}</h3>
+      <p class="text-sm text-gray-600 mt-2">{{item.description}}</p>
+    </div>
+    <div class="flex flex-col items-center ml-4">
+      <img [src]="item.imageUrl" alt="{{ item.name }}" class="w-28 h-28 object-cover rounded-md shadow-md mb-2">
+      <button (click)="addToCart(item)" class="bg-orange-500 text-white px-3 py-1 rounded-md hover:bg-orange-600">{{ buttonText[item.id] }}</button>
+    </div>
+  </div>
+</div>

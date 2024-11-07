@@ -1,0 +1,9 @@
+<div class="container mx-auto py-16 px-20">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-6">Nick, what's on your mind?</h2>
+    <div class="flex justify-between items-center overflow-x-auto space-x-8">
+      <div *ngFor="let cuisine of cuisines" class="flex flex-col items-center cursor-pointer" (click)="navigateToMenu(cuisine.name)">
+        <img [src]="cuisine.imageUrl" alt="{{ cuisine.name }}" class="w-48 h-48 object-cover">
+        <p>{{ cuisine.name }}</p>
+      </div>
+    </div>
+  </div>

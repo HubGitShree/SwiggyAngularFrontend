@@ -1,0 +1,64 @@
+<header class="bg-white shadow-md">
+    <div class="container mx-auto flex items-center justify-between py-4 px-6">
+      <!-- left : logo plus location -->
+      <div class="flex items-center space-x-4">
+        <!-- logo -->
+        <a routerLink="/home"><img src="Swiggy_idla2NniCl_1.png" alt="Swiggy Logo" class="w-[64px] h-[70px] cursor-pointer"></a>
+        
+        <!-- location dropdown -->
+        <div class="flex items-center space-x-1">
+          <span class="text-gray-700 font-medium">Other</span>
+         
+        </div>
+      </div>
+  
+      
+      <div class="flex items-center space-x-6 p-6">
+        <!-- Swiggy Corporate -->
+        <a href="#" class="flex items-center text-gray-700 hover:text-gray-900">
+            <!-- here goes the svgs -->
+          <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+           <path d="..."></path>
+          </svg>
+          <span>Swiggy Corporate</span>
+        </a>
+        
+        <!-- Search -->
+        <a href="#" class="flex items-center text-gray-700 hover:text-gray-900">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <span class="ml-1">Search</span>    <!-- Search font icon  -->
+        </a>
+        
+        <!-- Same styling for the rest -->
+        <!-- Offers -->
+        <a href="#" class="flex items-center text-gray-700 hover:text-gray-900 relative">
+          <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+            
+            <path d="..."></path>
+          </svg>
+          <span>Offers</span>
+          <span class="ml-1 text-orange-500 font-semibold">NEW</span>
+        </a>
+        
+        <!-- Favourites -->
+        <a routerLink="favorites" class="flex items-center text-gray-700 hover:text-gray-900 cursor-pointer">
+          <i class="fa-solid fa-heart fa-beat-fade"></i>
+          
+        </a>
+        
+        <!-- User Profile -->
+        <a href="#" class="flex items-center text-gray-700 hover:text-gray-900">
+          <i class="fa-solid fa-user"></i>
+          
+        </a>
+        
+        <!-- Cart -->
+        <a routerLink="/cart" class="flex items-center text-gray-700 hover:text-gray-900">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cursor-pointer">Cart</span>
+          <span class="ml-1 text-gray-700">({{cartItems.length}})</span>
+        </a>
+      </div>
+    </div>
+  </header>
+  

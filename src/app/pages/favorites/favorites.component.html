@@ -1,0 +1,17 @@
+<div class="container mx-auto py-8 px-20">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-10">
+      Your personal favs.&nbsp;<span class="font-light text-gray-500">P.s we love it too</span>
+    </h2>
+  
+    <div *ngFor="let item of favoriteItems" class="flex flex-col rounded-full sm:flex-row border border-orange-400 py-4 px-4 w-full text-center sm:text-left mb-10">
+      <div class="flex-shrink-0 m-4 w-32 h-32 rounded-full bg-gray-400 self-center">
+        <img [src]="item.imageUrl" alt="{{ item.name }}" class="w-full h-full rounded-full object-cover">
+      </div>
+      <div class="flex flex-col py-4 pr-4">
+        <h4 class="text-xl font-semibold">{{ item.name }}</h4>
+        <p class="text-md text-gray-600 mt-2">{{ item.description }}</p>
+        <p class="text-md text-gray-500 mt-1">Available at: {{ item.restaurant }}</p>
+      </div>
+    </div>
+  </div>
+  
